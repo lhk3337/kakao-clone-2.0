@@ -1,2 +1,2 @@
 # kakao-clone-2.0
-lhk3337.github.io
+https://lhk3337.github.io/kakao-clone-2.0/
