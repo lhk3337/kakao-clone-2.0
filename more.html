@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="css/Chats.css" />
   </head>
   <body>
+    <!-- 위의 상태바 아이콘 -->
     <div class="status-bar">
       <div class="status-bar__coloumn">
         <span class="status-bar__clock" id="clock"></span>
@@ -64,6 +65,7 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
+    <!-- more부터 설정 버튼까지 -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">More</h1>
@@ -80,23 +82,111 @@
         </span>
       </div>
     </header>
+    <!-- 본문내용 -->
+    <main class="more">
+      <!-- more__header는 프로필사진부터 Account 내용까지 -->
+      <header class="more__header">
+        <!-- friends__friend는 프로필사진부터 코멘트아이콘까지 -->
+        <div class="friends__friend friend friend--lg">
+          <!-- 첫번째 friend__column은 my프로필 정보 -->
+          <div class="friend__column">
+            <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
+
+            <div class="friend__content">
+              <span class="friends__name">
+                HK
+              </span>
+              <span class="friend__status">
+                lhk3337@gmail.com
+              </span>
+            </div>
+          </div>
+          <!-- 두번째 friend__column은 코멘트아이콘 -->
+          <div class="friend__column">
+            <i class="far fa-comment-alt fa-2x"></i>
+          </div>
+        </div>
+        <!-- more의 emotion,themes,account 버튼 목록 -->
+        <ul class="more__btn-list">
+          <!-- Emoticons__content -->
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="far fa-smile fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Emoticons
+            </span>
+          </li>
+          <!-- Themes__content -->
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fas fa-brush fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Themes
+            </span>
+          </li>
+          <!-- Account__content -->
+          <li class="more__btn">
+            <span class="more__btn-icon">
+              <i class="fab fa-kickstarter-k fa-2x"></i>
+            </span>
+            <span class="more__btn-title">
+              Account
+            </span>
+          </li>
+        </ul>
+      </header>
+      <!-- suggestion list -->
+      <section class="more__suggestions">
+        <h5 class="more__title">Suggestions</h5>
+        <ul class="more__suggestions-list">
+          <!-- Kakao Story__content -->
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-quote-right fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao Story</span>
+          </li>
+          <!-- Kakao friend__content -->
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-beer fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Kakao friends</span>
+          </li>
+          <!-- Friends Gem__content -->
+          <li class="more__suggestion suggestion">
+            <span class="suggestion__icon">
+              <i class="fas fa-gamepad fa-2x"></i>
+            </span>
+            <span class="suggestion__title">Friends Gem</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!--아래 4개 버튼 메뉴-->
     <nav class="nav">
       <ul class="nav__list">
+        <!-- friends.html 링크 버튼 아이콘 -->
         <li class="nav_list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i>
           </a>
         </li>
+        <!-- index.html(chat) 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="index.html" class="nav__list-link">
             <i class="far fa-comment"></i>
           </a>
         </li>
+        <!-- find.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
+        <!-- more.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
