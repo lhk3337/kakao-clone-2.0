@@ -10,7 +10,7 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
-    <title>Setting | Kakao Clone</title>
+    <title>Chat | Kakao Clone</title>
     <!-- 실시간 시계 javascript -->
     <script>
       function printClock() {
@@ -66,50 +66,80 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
-    <!-- 왼쪽방향 화살표 아이콘부터 돋보기 아이콘까지 -->
+    <!-- 왼쪽방향 화살표 아이콘부터 바 아이콘까지 -->
     <header class="header">
-      <!-- 왼쪽 화살표와 Setting글씨 -->
+      <!-- 왼쪽 화살표와 Best Friend글씨 -->
       <div class="header__header-column">
-        <!-- 왼쪽 화살표 아이콘(more.html로 링크) -->
-        <a href="more.html" class="header__back-btn">
+        <!-- 왼쪽 화살표 아이콘(index.html로 링크) -->
+        <a href="index.html" class="header__back-btn">
           <i class="fas fa-arrow-left fa-2x"></i>
         </a>
-        <!-- Setting 글씨 -->
-        <h1 class="header__title">Settings</h1>
+        <!-- Best Friend 글씨 -->
+        <h1 class="header__title">Best Friend</h1>
       </div>
-      <!-- 돋보기 아이콘 -->
+      <!-- 돋보기 아이콘, 바 아이콘 -->
       <div class="header__header-column">
         <span class="header__icon">
           <i class="fas fa-search"></i>
         </span>
+        <div class="header__icon">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </header>
     <!-- 본문내용 -->
-    <main class="settings">
-      <!-- Privacy, Notifications, Friends 리스트 -->
-      <section class="settings__sections">
-        <ul class="settings__list">
-          <!-- Privacy 항목 -->
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="fas fa-lock"></i>
-            </span>
-            <span class="settings__title">Privacy</span>
-          </li>
-          <!-- Notifications 항목 -->
-          <li class="settings__setting">
-            <span class="settings__icon">
-              <i class="far fa-bell"></i>
-            </span>
-            <span class="settings__title">Notifications</span>
-          </li>
-          <!-- Friends 항목 -->
-          <li class="settings__setting">
-            <span class="settings__icon"> <i class="far fa-user"></i> </span
-            ><span class="settings__title">Friends</span>
-          </li>
-        </ul>
-      </section>
+    <main class="chat">
+      <!-- 메시지 내용 -->
+      <ul class="chat__messages">
+        <!-- 채팅 날짜 -->
+        <span class="chat__timestamp">Friday, January 11, 2019</span>
+        <!-- 상대방 메시지 -->
+        <li class="incoming-message message">
+          <img src="images/user.jpg" alt="" class="g-avatar message__avatar" />
+          <!-- 메시지 보낸이 및 내용 -->
+          <div class="mesage__content">
+            <!-- 보낸이 -->
+            <span class="message__author">Best Friend</span>
+            <!-- 내용 -->
+            <div class="message__bubble">
+              Congrats I love you!
+            </div>
+          </div>
+          <!-- 받은 채팅 시간 -->
+          <span class="message__timestamp"> </span>
+        </li>
+        <!-- 나의 메시지 -->
+        <li class="incoming-message message">
+          <!-- 보낸 채팅 시간 -->
+          <span class="message__timestamp"> </span>
+          <div class="mesage__content">
+            <div class="message__bubble">
+              Thank you see you soon!
+            </div>
+          </div>
+        </li>
+      </ul>
     </main>
+    <!-- 밑 채팅 쓰기 바 -->
+    <div class="chat__write">
+      <div class="chat__write-column">
+        <i class="far fa-plus-square"></i>
+      </div>
+      <div class="chat__write-column">
+        <input
+          type="text"
+          placeholder="send message"
+          class="chat__write-input"
+        />
+      </div>
+      <div class="chat__write-column">
+        <span class="chat__write-icon">
+          <i class="far fa-smile-wink"></i>
+        </span>
+        <span class="chat__write-icon">
+          <i class="fas fa-microphone"></i>
+        </span>
+      </div>
+    </div>
   </body>
 </html>
