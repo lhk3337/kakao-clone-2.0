@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <title>Friends | Kakao Clone</title>
+    <!-- 실시간 시계 javascript -->
     <script>
       function printClock() {
         var clock = document.getElementById("clock"); // 출력할 장소 선택
@@ -45,6 +46,7 @@
     <link rel="stylesheet" href="css/Chats.css" />
   </head>
   <body>
+    <!-- 위의 상태바 아이콘 -->
     <div class="status-bar">
       <div class="status-bar__coloumn">
         <span class="status-bar__clock" id="clock"></span>
@@ -58,6 +60,7 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
+    <!-- friends 부터 설정 아이콘까지 -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Friends</h1>
@@ -74,7 +77,9 @@
         </span>
       </div>
     </header>
+    <!-- 본문내용 -->
     <main class="friends">
+      <!-- my 프로필 정보(프로필 사진, 이름, 상태)-->
       <header class="friends__header">
         <div class="friends__friend friend friend--lg">
           <div class="friend__column">
@@ -90,6 +95,7 @@
           </div>
         </div>
       </header>
+      <!-- 플러스 친구 정보 -->
       <div class="friends__plus">
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
@@ -103,9 +109,11 @@
           </div>
         </div>
       </div>
+      <!-- 친구 목록 -->
       <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend friend--lg">
+          <!-- 첫번째 friend__column은 친구 프로필 정보 -->
           <div class="friend__column">
             <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
             <div class="friend__content">
@@ -117,6 +125,7 @@
               </span>
             </div>
           </div>
+          <!-- 두번째 friend__column은 노래정보 -->
           <div class="friend__column">
             <div class="friend__now-listening">
               <span>FTISLAND (FT NomadCoders)</span>
@@ -126,23 +135,28 @@
         </li>
       </ul>
     </main>
+    <!--아래 4개 버튼 메뉴-->
     <nav class="nav">
       <ul class="nav__list">
+        <!-- friends.html 링크 버튼 아이콘 -->
         <li class="nav_list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="fas fa-user"></i>
           </a>
         </li>
+        <!-- index.html(chat) 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="index.html" class="nav__list-link">
             <i class="far fa-comment"></i>
           </a>
         </li>
+        <!-- find.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
+        <!-- more.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>

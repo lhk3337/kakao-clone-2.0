@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <title>Chats | Kakao Clone</title>
+    <!-- 실시간 시계 javascript -->
     <script>
       function printClock() {
         var clock = document.getElementById("clock"); // 출력할 장소 선택
@@ -51,6 +52,7 @@
     <link rel="stylesheet" href="css/Chats.css" />
   </head>
   <body>
+    <!-- 위의 상태바 아이콘 -->
     <div class="status-bar">
       <div class="status-bar__coloumn">
         <span class="status-bar__clock" id="clock"></span>
@@ -64,6 +66,7 @@
         <i class="fas fa-battery-full"></i>
       </div>
     </div>
+    <!-- Chats부터 설정 아이콘까지 -->
     <header class="header">
       <div class="header__header-column">
         <h1 class="header__title">Chats</h1>
@@ -80,9 +83,12 @@
         </span>
       </div>
     </header>
+    <!-- 본문내용 -->
     <main class="chats">
+      <!-- 친구 채팅 목록 -->
       <ul class="chats__list">
         <li class="chats__chat chat">
+          <!-- 프로필 사진 및 친구 이름 및 상태 -->
           <div class="chat__column">
             <img class="chat__avatar g-avatar" src="images/avatar.jpg" alt="" />
             <div class="chat__content">
@@ -90,29 +96,35 @@
               <span class="chat__preview">Going Home</span>
             </div>
           </div>
+          <!-- 메시지 확인일 yesterday -->
           <div class="chat__column">
             <span class="chat__timestamp">Yesterday</span>
           </div>
         </li>
       </ul>
     </main>
+    <!--아래 4개 버튼 메뉴-->
     <nav class="nav">
       <ul class="nav__list">
+        <!-- friends.html 링크 버튼 아이콘 -->
         <li class="nav_list-item">
           <a href="friends.html" class="nav__list-link">
             <i class="far fa-user"></i>
           </a>
         </li>
+        <!-- index.html(chat) 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="index.html" class="nav__list-link">
             <i class="fas fa-comment"></i>
           </a>
         </li>
+        <!-- find.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="find.html" class="nav__list-link">
             <i class="fas fa-search"></i>
           </a>
         </li>
+        <!-- more.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="more.html" class="nav__list-link">
             <i class="fas fa-ellipsis-h"></i>
