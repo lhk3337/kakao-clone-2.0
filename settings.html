@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Settings | Kakao Clone</title>
+    <!-- 실시간 시계 javascript -->
+    <script>
+      function printClock() {
+        var clock = document.getElementById("clock"); // 출력할 장소 선택
+        var currentDate = new Date(); // 현재시간
+        var calendar =
+          currentDate.getFullYear() +
+          "-" +
+          (currentDate.getMonth() + 1) +
+          "-" +
+          currentDate.getDate(); // 현재 날짜
+        var amPm = "AM"; // 초기값 AM
+        var currentHours = addZeros(currentDate.getHours(), 2);
+        var currentMinute = addZeros(currentDate.getMinutes(), 2);
+        var currentSeconds = addZeros(currentDate.getSeconds(), 2);
+
+        clock.innerHTML =
+          currentHours + ":" + currentMinute + ":" + currentSeconds; //날짜를 출력해 줌
+
+        setTimeout("printClock()", 1000); // 1초마다 printClock() 함수 호출
+      }
+
+      function addZeros(num, digit) {
+        // 자릿수 맞춰주기
+        var zero = "";
+        num = num.toString();
+        if (num.length < digit) {
+          for (i = 0; i < digit - num.length; i++) {
+            zero += "0";
+          }
+        }
+        return zero + num;
+      }
+
+      window.onload = function() {
+        printClock();
+      };
+    </script>
+    <link rel="stylesheet" href="css/Chats.css" />
+  </head>
+  <body>
+    <!-- 위의 상태바 아이콘 -->
+    <div class="status-bar">
+      <div class="status-bar__coloumn">
+        <span class="status-bar__clock" id="clock"></span>
+      </div>
+      <div class="status-bar__coloumn">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <i class="fas fa-ban"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+      </div>
+    </div>
+    <!-- 왼쪽방향 화살표 아이콘부터 돋보기 아이콘까지 -->
+    <header class="header">
+      <!-- 왼쪽 화살표와 Setting글씨 -->
+      <div class="header__header-column">
+        <!-- 왼쪽 화살표 아이콘(more.html로 링크) -->
+        <a href="more.html" class="header__back-btn">
+          <i class="fas fa-arrow-left fa-2x"></i>
+        </a>
+        <!-- Setting 글씨 -->
+        <h1 class="header__title">Settings</h1>
+      </div>
+      <!-- 돋보기 아이콘 -->
+      <div class="header__header-column">
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+      </div>
+    </header>
+    <!-- 본문내용 -->
+    <main class="settings">
+      <!-- Privacy, Notifications, Friends 리스트 -->
+      <section class="settings__sections">
+        <ul class="settings__list">
+          <!-- Privacy 항목 -->
+          <li class="settings__setting">
+            <span class="settings__icon">
+              <i class="fas fa-lock"></i>
+            </span>
+            <span class="settings__title">Privacy</span>
+          </li>
+          <!-- Notifications 항목 -->
+          <li class="settings__setting">
+            <span class="settings__icon">
+              <i class="far fa-bell"></i>
+            </span>
+            <span class="settings__title">Notifications</span>
+          </li>
+          <!-- Friends 항목 -->
+          <li class="settings__setting">
+            <span class="settings__icon"> <i class="far fa-user"></i> </span
+            ><span class="settings__title">Friends</span>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
