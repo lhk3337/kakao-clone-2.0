@@ -43,15 +43,15 @@
         printClock();
       };
     </script>
-    <link rel="stylesheet" href="css/Chats.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <!-- 위의 상태바 아이콘 -->
     <div class="status-bar">
-      <div class="status-bar__coloumn">
+      <div class="status-bar__column">
         <span class="status-bar__clock" id="clock"></span>
       </div>
-      <div class="status-bar__coloumn">
+      <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
@@ -81,11 +81,11 @@
     <main class="friends">
       <!-- my 프로필 정보(프로필 사진, 이름, 상태)-->
       <header class="friends__header">
-        <div class="friends__friend friend friend--lg">
+        <div class="friends__friend friend friend">
           <div class="friend__column">
             <img src="images/avatar.jpg" class="g-avatar friend__avatar" />
             <div class="friend__content">
-              <span class="friends__name">
+              <span class="friend__name">
                 HK
               </span>
               <span class="friend__status">
@@ -100,9 +100,9 @@
         <h5 class="friends__title">Plus Friend</h5>
         <div class="friends__friend friend">
           <div class="friend__column">
-            <img src="images/user.jpg" class="g-avatar friend__avatar" />
+            <img src="images/user.jpg" class=" friend__avatar" />
             <div class="friend__content">
-              <span class="friends__name">
+              <span class="friend__name">
                 Plus Friend
               </span>
             </div>
@@ -115,21 +115,23 @@
         <li class="friends__friend friend friend--lg">
           <!-- 첫번째 friend__column은 친구 프로필 정보 -->
           <div class="friend__column">
-            <img src="images/user.jpg" class="g-avatar friend__avatar" />
+            <img src="images/user.jpg" class="friend__avatar" />
             <div class="friend__content">
-              <span class="friends__name">
+              <span class="friend__name">
                 Anna
               </span>
               <span class="friend__status">
-                chu~
+                lovely chu~
               </span>
             </div>
           </div>
           <!-- 두번째 friend__column은 노래정보 -->
           <div class="friend__column">
             <div class="friend__now-listening">
-              <span>FTISLAND (FT NomadCoders)</span>
-              <i class="fas fa-play"></i>
+              <span>
+                FTISLAND (FT NomadCoders)
+                <i class="fas fa-play"></i>
+              </span>
             </div>
           </div>
         </li>

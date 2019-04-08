@@ -49,15 +49,17 @@
         printClock();
       };
     </script>
-    <link rel="stylesheet" href="css/Chats.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <!-- 위의 상태바 아이콘 -->
+    <!-- 위의 상태바 시계 및 아이콘 -->
     <div class="status-bar">
-      <div class="status-bar__coloumn">
+      <!-- 위 상태바 시계 -->
+      <div class="status-bar__column">
         <span class="status-bar__clock" id="clock"></span>
       </div>
-      <div class="status-bar__coloumn">
+      <!-- 위 상태바 아이콘 -->
+      <div class="status-bar__column">
         <i class="fas fa-clock"></i>
         <i class="fas fa-volume-mute"></i>
         <i class="fas fa-wifi"></i>
@@ -90,16 +92,27 @@
         <li class="chats__chat chat">
           <!-- 프로필 사진 및 친구 이름 및 상태 -->
           <a href="chat.html">
-            <div class="chat__column">
-              <img class="chat__avatar g-avatar" src="images/user.jpg" alt="" />
-              <div class="chat__content">
-                <span class="chat__username">Lynn</span>
-                <span class="chat__preview">Going Home</span>
+            <div class="chats__chat friend friend--lg">
+              <!-- 첫번째 friend__column은 친구 프로필 정보 -->
+              <div class="friend__column">
+                <img src="images/user.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    Nicol
+                  </span>
+                  <span class="friend__bottom-text">
+                    Positive
+                  </span>
+                </div>
               </div>
-            </div>
-            <!-- 메시지 확인일 yesterday -->
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <!-- 두번째 friend__column은 노래정보 -->
+              <div class="friend__column">
+                <div class="friend__now-listening">
+                  <span class="chat__timestamp">
+                    March 8
+                  </span>
+                </div>
+              </div>
             </div>
           </a>
         </li>
@@ -117,6 +130,7 @@
         <!-- index.html(chat) 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -129,7 +143,7 @@
         <!-- more.html 버튼 링크 아이콘 -->
         <li class="nav_list-item">
           <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i>
+            <i class="fas fa-ellipsis-h "></i>
           </a>
         </li>
       </ul>
