@@ -51,7 +51,7 @@
     </script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body class="chats-body">
     <!-- 위의 상태바 아이콘 -->
     <div class="status-bar">
       <div class="status-bar__column">
@@ -88,7 +88,7 @@
       </div>
     </header>
     <!-- 본문내용 -->
-    <main class="chat">
+    <main class="chat-screen">
       <!-- 메시지 내용 -->
       <ul class="chat__messages">
         <!-- 채팅 날짜 -->
@@ -97,22 +97,42 @@
         <li class="incoming-message message">
           <img src="images/user.jpg" alt="" class="m-avatar message__avatar" />
           <!-- 메시지 보낸이 및 내용 -->
-          <div class="mesage__content">
+          <div class="message__content">
             <!-- 보낸이 -->
-            <span class="message__author">Best Friend</span>
             <!-- 내용 -->
             <div class="message__bubble">
               Congrats I love you!
             </div>
+            <span class="message__author">Best Friend</span>
           </div>
           <!-- 받은 채팅 시간 -->
-          <span class="message__timestamp"> </span>
         </li>
         <!-- 나의 메시지 -->
-        <li class="incoming-message message">
+        <li class="sent-message message">
           <!-- 보낸 채팅 시간 -->
-          <span class="message__timestamp"> </span>
-          <div class="mesage__content">
+          <div class="message__content">
+            <div class="message__bubble">
+              Thank you see you soon!
+            </div>
+          </div>
+        </li>
+        <li class="incoming-message message">
+          <img src="images/user.jpg" alt="" class="m-avatar message__avatar" />
+          <!-- 메시지 보낸이 및 내용 -->
+          <div class="message__content">
+            <!-- 보낸이 -->
+            <!-- 내용 -->
+            <div class="message__bubble">
+              Congrats I love you!
+            </div>
+            <span class="message__author">Best Friend</span>
+          </div>
+          <!-- 받은 채팅 시간 -->
+        </li>
+        <!-- 나의 메시지 -->
+        <li class="sent-message message">
+          <!-- 보낸 채팅 시간 -->
+          <div class="message__content">
             <div class="message__bubble">
               Thank you see you soon!
             </div>
