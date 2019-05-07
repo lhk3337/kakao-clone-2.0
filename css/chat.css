@@ -1,13 +1,23 @@
+.header-wrapper {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  padding: 10px 0px;
+  background-color: white;
+}
+
 .chats-body {
-  padding: 0;
+  padding: 10px 0px;
+  padding-top: 100px;
+  min-height: 10000px;
 }
 .chats-body .header,
 .chats-body .status-bar {
   padding: 0px 20px;
 }
-.chat-screen {
+.chats-body {
   background-image: url("../images/white-waves.png");
-  min-height: 100vh;
+  min-height: 1000vh;
 }
 .chat__write {
   position: fixed;

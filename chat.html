@@ -53,40 +53,42 @@
   </head>
   <body class="chats-body">
     <!-- 위의 상태바 아이콘 -->
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock" id="clock"></span>
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock" id="clock"></span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <i class="fas fa-ban"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <i class="fas fa-ban"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <!-- 왼쪽방향 화살표 아이콘부터 바 아이콘까지 -->
+      <header class="header">
+        <!-- 왼쪽 화살표와 Best Friend글씨 -->
+        <div class="header__header-column">
+          <!-- 왼쪽 화살표 아이콘(index.html로 링크) -->
+          <a href="index.html" class="header__back-btn">
+            <i class="fas fa-arrow-left "></i>
+          </a>
+          <!-- Best Friend 글씨 -->
+          <h1 class="header__title">Best Friend</h1>
+        </div>
+        <!-- 돋보기 아이콘, 바 아이콘 -->
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <!-- 왼쪽방향 화살표 아이콘부터 바 아이콘까지 -->
-    <header class="header">
-      <!-- 왼쪽 화살표와 Best Friend글씨 -->
-      <div class="header__header-column">
-        <!-- 왼쪽 화살표 아이콘(index.html로 링크) -->
-        <a href="index.html" class="header__back-btn">
-          <i class="fas fa-arrow-left "></i>
-        </a>
-        <!-- Best Friend 글씨 -->
-        <h1 class="header__title">Best Friend</h1>
-      </div>
-      <!-- 돋보기 아이콘, 바 아이콘 -->
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-bars"></i>
-        </span>
-      </div>
-    </header>
     <!-- 본문내용 -->
     <main class="chat-screen">
       <!-- 메시지 내용 -->
